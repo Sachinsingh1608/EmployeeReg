@@ -126,6 +126,7 @@ namespace EmployeeReg
           
             
             SaveToFile();
+            MessageBox.Show("Update Successfully!");
 
         }
 

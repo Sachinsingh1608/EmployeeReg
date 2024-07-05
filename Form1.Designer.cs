@@ -51,6 +51,7 @@
             this.Records = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.CloseReg = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -279,6 +280,7 @@
             this.CloseReg.TabIndex = 26;
             this.CloseReg.Text = "Close";
             this.CloseReg.UseVisualStyleBackColor = false;
+            this.CloseReg.Click += new System.EventHandler(this.CloseReg_Click);
             // 
             // Form1
             // 
@@ -341,6 +343,7 @@
         private System.Windows.Forms.Label Records;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button CloseReg;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
