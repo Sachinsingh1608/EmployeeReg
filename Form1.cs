@@ -85,7 +85,7 @@ namespace EmployeeReg
             using (BinaryWriter IObjBW = new BinaryWriter(File.Open(filePath, FileMode.Append)))
             {
                 string record = $"|{newEmpId}|{FirstName}|{LastName}|{BirthDate}|{gender}|{lnAge}|{Address}|{salary}|{deptid}|{FilePath}";
-                IObjBW.Write(record + "\n");
+                IObjBW.Write(record+"\n");
             }
 
             
@@ -161,7 +161,16 @@ namespace EmployeeReg
            
         }
 
-       
+        private void CloseReg_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DeleteRec_Click(object sender, EventArgs e)
+        {
+            Delete lobjDel = new Delete();
+            lobjDel.ShowDialog();
+        }
     }
     
 }

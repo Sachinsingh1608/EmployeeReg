@@ -52,6 +52,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.CloseReg = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.DeleteRec = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -282,12 +283,25 @@
             this.CloseReg.UseVisualStyleBackColor = false;
             this.CloseReg.Click += new System.EventHandler(this.CloseReg_Click);
             // 
+            // DeleteRec
+            // 
+            this.DeleteRec.BackColor = System.Drawing.Color.Lime;
+            this.DeleteRec.Font = new System.Drawing.Font("Open Sans Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteRec.Location = new System.Drawing.Point(1163, 12);
+            this.DeleteRec.Name = "DeleteRec";
+            this.DeleteRec.Size = new System.Drawing.Size(188, 52);
+            this.DeleteRec.TabIndex = 27;
+            this.DeleteRec.Text = "Delete Record";
+            this.DeleteRec.UseVisualStyleBackColor = false;
+            this.DeleteRec.Click += new System.EventHandler(this.DeleteRec_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1713, 684);
+            this.Controls.Add(this.DeleteRec);
             this.Controls.Add(this.CloseReg);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.Records);
@@ -344,6 +358,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button CloseReg;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button DeleteRec;
     }
 }
 
